@@ -1,0 +1,3 @@
+pys2-msgboxes==0.0.2
+PySide2==5.15.2
+shiboken2==5.15.2
