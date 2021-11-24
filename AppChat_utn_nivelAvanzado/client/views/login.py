@@ -52,7 +52,7 @@ class LoginForm(object):
 
     def retranslateUi(self, loginForm):
         loginForm.setWindowTitle(QCoreApplication.translate("loginForm", u"Form", None))
-        self.label.setText(QCoreApplication.translate("loginForm", u"<html><head/><body><p align=\"center\"><span style=\" font-size:14pt; font-weight:600; color:#ffffff;\">CHAT TCP</span></p></body></html>", None))
+        self.label.setText(QCoreApplication.translate("loginForm", u"<html><head/><body><p align=\"center\"><span style=\" font-size:14pt; font-weight:600; color:#ffffff;\">CHAT UTN</span></p></body></html>", None))
         self.label_2.setText(QCoreApplication.translate("loginForm", u"USERNAME", None))
         self.joinButton.setText(QCoreApplication.translate("loginForm", u"JOIN THE CHAT", None))
     # retranslateUi

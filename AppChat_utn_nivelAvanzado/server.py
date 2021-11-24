@@ -1,6 +1,6 @@
 import socket
 import threading
-
+import binascii
 
 host = '127.0.0.1'
 port = 55555
@@ -67,6 +67,11 @@ def receive_connections():
         client, address = server.accept()
             #el socket que lo pusimos como "server" tiene una funcion accept que acepta las conexiones que se conectes a los datos de conexion que pusimos arriba (host,port)
             #esta funcion retorna dos datos, el ip y el puerto de donde se conectan los clientes
+
+        client.send("@tokenhexa".encode("utf-8"))
+        token = client.recv(1024)
+        token = binascii.hexlify(token).decode('utf-8')
+        print("El token recibido en hexadecimal es: ", token)
 
         client.send("@username".encode("utf-8"))
             #enviamos un mensaje a la aplicacion del cliente para pedirle el username

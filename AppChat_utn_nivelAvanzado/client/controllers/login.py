@@ -13,10 +13,10 @@ class LoginWindow(QWidget, LoginForm):
 
     def join_to_chat(self):
         username = self.usernameLineEdit.text()
-
+        token = 0x85A4
         if username != '':
             from controllers.chat import ChatWindow
-            self.chat_window = ChatWindow(username)
+            self.chat_window = ChatWindow(username, token)
             self.chat_window.show()
             self.close()
         else:

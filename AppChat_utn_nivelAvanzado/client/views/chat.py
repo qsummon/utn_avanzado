@@ -20,7 +20,7 @@ class ChatForm(object):
         chatForm.resize(877, 538)
         chatForm.setCursor(QCursor(Qt.PointingHandCursor))
         icon = QIcon()
-        icon.addFile(u"client/assets/icons8-exit-200.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon.addFile(u"assets/icons8-exit-200.png", QSize(), QIcon.Normal, QIcon.Off)
         chatForm.setWindowIcon(icon)
         self.frame = QFrame(chatForm)
         self.frame.setObjectName(u"frame")
@@ -90,7 +90,7 @@ class ChatForm(object):
 "			background-color: #0069c0;\n"
 "	}")
         icon1 = QIcon()
-        icon1.addFile(u"client/assets/icons8-email-send-96.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon1.addFile(u"assets/icons8-email-send-96.png", QSize(), QIcon.Normal, QIcon.Off)
         self.sendButton.setIcon(icon1)
         self.sendButton.setIconSize(QSize(60, 60))
         self.sendButton.setFlat(True)
@@ -102,7 +102,7 @@ class ChatForm(object):
 
     def retranslateUi(self, chatForm):
         chatForm.setWindowTitle(QCoreApplication.translate("chatForm", u"Form", None))
-        self.label.setText(QCoreApplication.translate("chatForm", u"<html><head/><body><p align=\"center\"><span style=\" font-size:16pt; font-weight:600; color:#ffffff;\">CHAT UTP</span></p></body></html>", None))
+        self.label.setText(QCoreApplication.translate("chatForm", u"<html><head/><body><p align=\"center\"><span style=\" font-size:16pt; font-weight:600; color:#ffffff;\">CHAT UTN</span></p></body></html>", None))
         self.logoutButton.setText("")
         self.label_2.setText(QCoreApplication.translate("chatForm", u"<html><head/><body><p align=\"center\"><span style=\" font-size:10pt; font-weight:600; color:#ffffff;\">LOGOUT</span></p></body></html>", None))
         self.messageLineEdit.setPlaceholderText(QCoreApplication.translate("chatForm", u"Type Something to send...", None))
