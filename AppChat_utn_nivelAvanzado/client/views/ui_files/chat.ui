@@ -124,6 +124,12 @@
     <string notr="true">background-color:rgb(97, 194, 144);
 color: white</string>
    </property>
+   <property name="verticalScrollBarPolicy">
+    <enum>Qt::ScrollBarAlwaysOn</enum>
+   </property>
+   <property name="sizeAdjustPolicy">
+    <enum>QAbstractScrollArea::AdjustToContents</enum>
+   </property>
    <property name="readOnly">
     <bool>true</bool>
    </property>

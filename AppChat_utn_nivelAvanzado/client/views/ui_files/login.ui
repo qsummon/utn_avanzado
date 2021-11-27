@@ -92,7 +92,7 @@
 background-color:  rgb(85, 170, 127)</string>
    </property>
    <property name="text">
-    <string>JOIN THE CHAT</string>
+    <string>JOIN</string>
    </property>
   </widget>
  </widget>
