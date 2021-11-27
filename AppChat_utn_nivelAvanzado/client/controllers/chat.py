@@ -9,6 +9,7 @@ import threading
 
 
 host = socket.gethostbyname(socket.gethostname())
+# host = '127.0.0.1'
 
 
 class ChatWindow(QWidget, ChatForm):
@@ -17,7 +18,8 @@ class ChatWindow(QWidget, ChatForm):
         super().__init__()
 
         self.username = username
-        self.token = [0x85A4,0xfa9a,0xcc57,0x5874,0x54d7,0x2e5d,0xe163,0x4c7a,0x3b30,0xc033,0xf65f,0x455b,0xfb4a]
+        self.token = [0x85A4, 0xfa9a, 0xcc57, 0x5874, 0x54d7, 0x2e5d,
+                      0xe163, 0x4c7a, 0x3b30, 0xc033, 0xf65f, 0x455b, 0xfb4a]
         self.setupUi(self)
 
         self.connect()
@@ -49,7 +51,7 @@ class ChatWindow(QWidget, ChatForm):
 
     def logout(self):
         from pathlib import Path
-        from PySide2.QtGui import QIcon 
+        from PySide2.QtGui import QIcon
         ruta_icono = Path('.', 'assets', 'logo.png')
         self.login_window = LoginWindow()
         self.login_window.setWindowTitle('UTN CHAT')
