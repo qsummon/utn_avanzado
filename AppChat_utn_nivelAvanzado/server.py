@@ -4,13 +4,13 @@ import binascii
 import datetime
 
 
-
 host = socket.gethostbyname(socket.gethostname())
 port = 55555
 
 
 def logtime():
     return datetime.datetime.now().strftime("%d.%b %Y %H:%M:%S")
+
 
 def my_logger(orig_func):
     import logging
